@@ -20,8 +20,8 @@ if [ -z "$1" ]; then
     echo "Usage $0 start | stop"
 else
     if [ "$1" == "start" ]; then
-        docker run -it --rm jelastic-cli bash -c "$STARTCOMMAND"
+        docker run -it --rm lrkwz/jelastic-cli bash -c "$STARTCOMMAND"
     else
-        docker run -it --rm jelastic-cli bash -c "$STOPCOMMAND"
+        docker run -it --rm lrkwz/jelastic-cli bash -c "$STOPCOMMAND"
     fi
 fi
