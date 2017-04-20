@@ -1,0 +1,5 @@
+version: '3'
+services:
+    jelastic-cli:
+        build: .
+        image: lrkwz/jelastic-cli
